@@ -31,7 +31,27 @@
   <polaris-chip title="Sports are the only thing that matter"></polaris-chip>
   <polaris-chip title="Grants and donations"></polaris-chip>
 
-  <h1>Fernanda</h1>
+  <h1><button id="add">Add another card</button>
+
+<div class="wrapper">
+
+  <section class="card">
+    <h2>IST</h2>
+    <img src="https://tse2.mm.bing.net/th/id/OIP.8YCFb-IJzmKvITixyhjvsAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3"
+      alt="IST building"
+    />
+    <p>College of Information Sciences and Technology</p>
+    <a class="details" href="https://hax.psu.edu">Details</a>
+  </section>
+
+</div>
+
+<script>
+document.querySelector('#add').addEventListener('click', function () {
+  const card = document.querySelector('.card').cloneNode(true);
+  document.querySelector('.wrapper').appendChild(card);
+});
+</script></h1>
   <my-card></my-card>
 
   <!-- this is what is bringing in the definition for this tag -->
