@@ -27,6 +27,10 @@
       gap: 16px;
       padding: 16px;
     }
+
+    my-card[fancy] {
+      --my-card-fancy-bg: #FF0000;
+    }
   </style>
 
   <title>polaris-chip / cards</title>
@@ -43,43 +47,44 @@
   <div class="wrapper">
 
     <my-card
+      fancy
       title="McDonalds"
       theme="mcd"
       image="https://logos-world.net/wp-content/uploads/2020/05/McDonalds-Logo.jpg"
-      subtitle="Big Mac and ten-piece chicken nuggets"
       link="https://www.mcdonalds.com/us/en-us/full-menu.html">
+      <p>Big Mac and ten-piece chicken nuggets</p>
     </my-card>
 
     <my-card
       title="Chick-fil-A"
       theme="cfa"
       image="https://tse2.mm.bing.net/th/id/OIP.6q1W2mjgNvK6rz0ghKSZ4wHaEK?rs=1&pid=ImgDetMain&o=7&rm=3"
-      subtitle="Chick-fil-A Sandwich and a Frosted Lemonade"
       link="https://www.chick-fil-a.com/">
+      <p>Chick-fil-A Sandwich and a <strong>FROSTED LEMONADE</strong></p>
     </my-card>
 
     <my-card
       title="Spotify"
       theme="green"
       image="https://static.vecteezy.com/system/resources/previews/042/148/631/original/spotify-logo-spotify-social-media-icon-free-png.png"
-      subtitle="MUSIC!!!"
       link="https://open.spotify.com/">
+      <p>MUSIC!!!</p>
     </my-card>
 
     <my-card
       title="Taco Bell"
       theme="purple"
       image="https://cdn.freebiesupply.com/logos/large/2x/taco-bell-5-logo-png-transparent.png"
-      subtitle="giuuu fake mexican food"
       link="https://www.tacobell.com/">
+      <p>giuuu fake mexican food</p>
     </my-card>
 
     <my-card
       title="YouTube"
       theme="psu"
       image="https://www.freepnglogos.com/uploads/youtube-logo-hd-8.png"
-      subtitle="good videos"
       link="https://www.youtube.com/">
+      <p>good videos</p>
     </my-card>
 
   </div>
