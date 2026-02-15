@@ -16,45 +16,74 @@
       font-family: sans-serif;
       background-color: #ededed;
     }
+
     polaris-chip {
       margin: 16px;
     }
+
+    .wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding: 16px;
+    }
   </style>
-  <title>polaris-chip / my-card</title>
+
+  <title>polaris-chip / cards</title>
 </head>
 
 <body>
   <h1>polaris-chip</h1>
-  <!-- this is going to do whatever the tag's defaults are -->
+
   <polaris-chip title="News of Record" link="https://psu.edu/"></polaris-chip>
   <polaris-chip title="Faculty and Staff"></polaris-chip>
   <polaris-chip title="Sports are the only thing that matter"></polaris-chip>
   <polaris-chip title="Grants and donations"></polaris-chip>
 
-  <h1><button id="add">Add another card</button>
+  <div class="wrapper">
 
-<div class="wrapper">
+    <my-card
+      title="McDonalds"
+      theme="mcd"
+      image="https://logos-world.net/wp-content/uploads/2020/05/McDonalds-Logo.jpg"
+      subtitle="Big Mac and ten-piece chicken nuggets"
+      link="https://www.mcdonalds.com/us/en-us/full-menu.html">
+    </my-card>
 
-  <section class="card">
-    <h2>IST</h2>
-    <img src="https://tse2.mm.bing.net/th/id/OIP.8YCFb-IJzmKvITixyhjvsAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3"
-      alt="IST building"
-    />
-    <p>College of Information Sciences and Technology</p>
-    <a class="details" href="https://hax.psu.edu">Details</a>
-  </section>
+    <my-card
+      title="Chick-fil-A"
+      theme="cfa"
+      image="https://tse2.mm.bing.net/th/id/OIP.6q1W2mjgNvK6rz0ghKSZ4wHaEK?rs=1&pid=ImgDetMain&o=7&rm=3"
+      subtitle="Chick-fil-A Sandwich and a Frosted Lemonade"
+      link="https://www.chick-fil-a.com/">
+    </my-card>
 
-</div>
+    <my-card
+      title="Spotify"
+      theme="green"
+      image="https://static.vecteezy.com/system/resources/previews/042/148/631/original/spotify-logo-spotify-social-media-icon-free-png.png"
+      subtitle="MUSIC!!!"
+      link="https://open.spotify.com/">
+    </my-card>
 
-<script>
-document.querySelector('#add').addEventListener('click', function () {
-  const card = document.querySelector('.card').cloneNode(true);
-  document.querySelector('.wrapper').appendChild(card);
-});
-</script></h1>
-  <my-card></my-card>
+    <my-card
+      title="Taco Bell"
+      theme="purple"
+      image="https://cdn.freebiesupply.com/logos/large/2x/taco-bell-5-logo-png-transparent.png"
+      subtitle="giuuu fake mexican food"
+      link="https://www.tacobell.com/">
+    </my-card>
 
-  <!-- this is what is bringing in the definition for this tag -->
+    <my-card
+      title="YouTube"
+      theme="psu"
+      image="https://www.freepnglogos.com/uploads/youtube-logo-hd-8.png"
+      subtitle="good videos"
+      link="https://www.youtube.com/">
+    </my-card>
+
+  </div>
+
   <script type="module" src="./src/polaris-chip.js"></script>
   <script type="module" src="./src/my-card.js"></script>
 </body>
