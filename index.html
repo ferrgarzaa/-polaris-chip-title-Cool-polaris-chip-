@@ -31,6 +31,10 @@
     my-card[fancy] {
       --my-card-fancy-bg: #FF0000;
     }
+
+    counter-app {
+      margin: 16px;
+    }
   </style>
 
   <title>polaris-chip / cards</title>
@@ -89,8 +93,18 @@
 
   </div>
 
+  <h2>Counter App Demo</h2>
+
+  <!-- Default counter -->
+  <counter-app></counter-app>
+
+  <!-- Counter with custom values -->
+  <counter-app counter="16" min="10" max="25"></counter-app>
+
   <script type="module" src="./src/polaris-chip.js"></script>
   <script type="module" src="./src/my-card.js"></script>
+  <script type="module" src="./src/counter-app.js"></script>
+
 </body>
 
 </html>

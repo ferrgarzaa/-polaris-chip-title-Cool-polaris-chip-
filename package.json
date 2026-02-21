@@ -15,6 +15,7 @@
     "start": "web-dev-server"
   },
   "dependencies": {
+    "@haxtheweb/multiple-choice": "^25.0.0",
     "lit": "^3.1.2"
   },
   "devDependencies": {
